@@ -7,4 +7,3 @@ RUN apt update \
     && mkdir /var/www/moodledata \
     && chmod 0777 /var/www/moodledata \
     && chmod -R 0755 /var/www/html
-ARG WWWROOT ${RENDER_EXTERNAL_URL:-http://localhost}
