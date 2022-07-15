@@ -24,6 +24,12 @@ services:
         fromDatabase:
           name: moodleDB
           property: port
+      - key: WWWROOT
+        fromService:
+          name: moodle
+          type: web
+          envVarKey: RENDER_EXTERNAL_URL
+
 databases:
   - name: moodleDB
     plan: free
