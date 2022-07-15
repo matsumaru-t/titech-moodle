@@ -25,7 +25,7 @@ services:
           name: moodleDB
           property: port
       - key: WWWROOT
-        value: $_ENV['RENDER_EXTERNAL_URL']
+        value: ${RENDER_EXTERNAL_URL}
 databases:
   - name: moodleDB
     plan: free
